@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+
+<style type="text/css">
+   body{padding:20px; font-size:14px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#0000FF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 13px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
+
+</head>
+
+<body>
+
+<h2>Your Menu</h2>
+
+<style type="text/css">#cssmenu ul {margin: 0; padding: 7px 6px 0; background: #7d7d7d url(menu_assets/images/overlay.png) repeat-x 0 -110px; line-height: 100%; border-radius: 1em; font: normal .8em/1.5em Arial, Helvetica, sans-serif; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);}
+#cssmenu li {margin: 0 5px; padding: 0 0 8px; float: left; position: relative; list-style: none; }
+#cssmenu a,
+#cssmenu a:link {font-weight: bold; color: #e7e5e5; text-decoration: none; display: block; padding:  8px 20px; margin: 0; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;	 text-shadow: 0 1px 1px rgba(0,0,0, .3); }
+#cssmenu a:hover {background: #000; color: #fff;}
+#cssmenu .active a, 
+#cssmenu li:hover > a {background: #666 url(menu_assets/images/overlay.png) repeat-x 0 -40px; color: #444; border-top: solid 1px #f8f8f8; -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2); -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2); box-shadow: 0 1px 1px rgba(0,0,0, .2); text-shadow: 0 1px 0 rgba(255,255,255, 1); }
+#cssmenu ul ul li:hover a,
+#cssmenu li:hover li a {background: none; border: none; color: #666; -webkit-box-shadow: none; -moz-box-shadow: none;}
+#cssmenu ul ul a:hover {background: #8f8f8f url(menu_assets/images/overlay.png) repeat-x 0 -100px !important; color: #fff !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-shadow: 0 1px 1px rgba(0,0,0, .1);}
+#cssmenu li:hover > ul {display: block;}
+#cssmenu ul ul {display: none; margin: 0; padding: 0; width: 185px; position: absolute; top: 40px; left: 0; background: #ddd url(menu_assets/images/overlay.png) repeat-x 0 0; border: solid 1px #b4b4b4; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3); box-shadow: 0 1px 3px rgba(0,0,0, .3);}
+#cssmenu ul ul li {float: none; margin: 0; padding: 3px; }
+#cssmenu ul ul a {font-weight: normal; text-shadow: 0 1px 0 #fff; }
+#cssmenu ul:after {content: '.'; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+* html #cssmenu  ul {height: 1%;}</style>
+<div id='cssmenu'>
+<ul>
+   <li class='active '><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub '><a href='#'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Product 1</span></a></li>
+         <li><a href='#'><span>Product 2</span></a></li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+<div style="clear:both; margin: 0 0 30px 0;">&nbsp;</div>
+
+<h2>Installation Instructions</h2>
+
+<ol>
+   <li>Upload the <code>menu_assets</code> folder to the root directory of your website. This is usually where your <code>index.html</code> file is.</li>
+   <li>Copy and paste the code below somewhere between the <code>&lt;head>&lt;/head></code> tags.<textarea class='css'><link href="/menu_assets/styles.css" rel="stylesheet" type="text/css"></textarea></li>
+   <li>Copy and paste the html below where ever you want your menu to show up.<textarea class='html'><div id='cssmenu'>
+<ul>
+   <li class='active '><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub '><a href='#'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Product 1</span></a></li>
+         <li><a href='#'><span>Product 2</span></a></li>
+      </ul>
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li><a href='#'><span>Contact</span></a></li>
+</ul>
+</div></textarea></li>
+</ol>
+
+<h2>Notes</h2>
+<ol>
+   <li>If you run into a problem getting your menu to work or have suggestions for the site please <a href='http://cssmenumaker.com/resources/contact'>Contact Us</a> and let us know. We will try to help as much as possible.</li>
+</ol>
+
+</body>
+</html>
